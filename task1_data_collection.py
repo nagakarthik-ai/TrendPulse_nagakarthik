@@ -91,7 +91,7 @@ for cat in categories:
 if not os.path.exists("data"):
     os.makedirs("data")
 
-file_path = "data/trends_" + datetime.now().strftime("%Y%m%d") + ".json"
+file_path = "data/trends_20240115.json"
 
 with open(file_path, "w", encoding="utf-8") as f:
     json.dump(all_data, f, indent=4)
